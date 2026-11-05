@@ -1,0 +1,23 @@
+name = "TTNPlots"
+uuid = "fc048bf9-6d04-4128-9c40-420f351ccd9b"
+version = "0.1.0"
+
+[weakdeps]
+TTNSolver = "e04f9842-9468-4ce2-8b19-12c83bc286ab"
+
+[extensions]
+TTNPlotsTTNSolverExt = "TTNSolver"
+
+[compat]
+julia = "1.11"
+TTNSolver = "0.1"
+
+[sources]
+TTNSolver = {path = "../TTNSolver"}
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TTNSolver = "e04f9842-9468-4ce2-8b19-12c83bc286ab"
+
+[targets]
+test = ["Test", "TTNSolver"]
